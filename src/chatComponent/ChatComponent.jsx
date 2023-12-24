@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
 import LoadingSpinner from '../loadingicon/LoadingSpinner';
-import Footer from '../footer/Footer';
 
 const ChatComponent = () => {
   const [userInput, setUserInput] = useState('');
@@ -83,16 +82,6 @@ const ChatComponent = () => {
               <h3>Guru-Ji ......Ask Anything</h3>
             </Card.Header>
             <Card.Body>
-              <div className="mb-4">
-                {chatHistory.map((message, index) => (
-                  <div key={index} className="mb-2">
-                    <strong>You:</strong> {message.user}
-                    <br />
-                    <strong>GURUJI:</strong> {message.ai}
-                    <hr />
-                  </div>
-                ))}
-              </div>
               <Form.Group className="d-flex mb-3">
                 <Form.Control
                   type="text"
@@ -110,12 +99,22 @@ const ChatComponent = () => {
                   <LoadingSpinner />
                 </div>
               ) : null }
+              <div className="mb-4">
+                {chatHistory.map((message, index) => (
+                  <div key={index} className="mb-2">
+                    <strong>You:</strong> {message.user}
+                    <br />
+                    <strong>GURUJI:</strong> {message.ai}
+                    <hr />
+                  </div>
+                ))}
+              </div>
             </Card.Body>
           </Card>
         </Col>
       </Row>
     </Container>
-    <Footer/>
+    
     </div>
   );
 };
