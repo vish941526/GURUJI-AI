@@ -1,14 +1,14 @@
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Form, Button, Card, Spinner } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
 import LoadingSpinner from '../loadingicon/LoadingSpinner';
 import Footer from '../footer/Footer';
 
 const ChatComponent = () => {
   const [userInput, setUserInput] = useState('');
   const [chatHistory, setChatHistory] = useState([]);
-  const [response, setResponse] = useState('');
+  const [, setResponse] = useState('');
   const [loading, setLoading] = useState(false);
   const API_KEY = 'AIzaSyAp7027qBxH7jUefNjr8vvN-skwF4-zkYc';
   const MODEL_NAME = 'gemini-pro';
