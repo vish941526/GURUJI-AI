@@ -1,6 +1,6 @@
 
 .home-section-bg {
-    background-image: url('C:\Users\Vishal Maurya\Desktop\Guru ji\guru-ji\public\homeBackground.jpg');
+    background-image: url('../../public/homeBackground.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
