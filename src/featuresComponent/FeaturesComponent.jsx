@@ -1,10 +1,11 @@
 
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import Footer from '../footer/Footer';
 
 const FeaturesComponent = () => {
   return (
-    <Container className="mt-5">
+    <Container className="mt-3">
       <Row>
         <Col md={8} lg={6} className="mx-auto">
           <div className="text-center">
@@ -29,10 +30,10 @@ const FeaturesComponent = () => {
                 Guru Ji can assist you with a variety of topics, including general knowledge, advice, and more.
               </p>
             </li>
-            
           </ul>
         </Col>
       </Row>
+      <Footer/>
     </Container>
   );
 };

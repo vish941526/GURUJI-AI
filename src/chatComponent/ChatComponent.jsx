@@ -9,7 +9,7 @@ const ChatComponent = () => {
   const [chatHistory, setChatHistory] = useState([]);
   const [, setResponse] = useState('');
   const [loading, setLoading] = useState(false);
-  const API_KEY = 'AIzaSyAp7027qBxH7jUefNjr8vvN-skwF4-zkYc';
+  const API_KEY =  'AIzaSyAp7027qBxH7jUefNjr8vvN-skwF4-zkYc';
   const MODEL_NAME = 'gemini-pro';
 
   const runChat = async () => {
@@ -72,8 +72,6 @@ const ChatComponent = () => {
   };
 
   return (
-    <div>
-
     <Container className="mt-5">
       <Row className="justify-content-center">
         <Col md={8} lg={6}>
@@ -114,8 +112,6 @@ const ChatComponent = () => {
         </Col>
       </Row>
     </Container>
-    
-    </div>
   );
 };
 

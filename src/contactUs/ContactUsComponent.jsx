@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import Footer from '../footer/Footer';
 
 const ContactUsComponent = () => {
   const handleCall = () => {
@@ -28,6 +29,7 @@ const ContactUsComponent = () => {
           </div>
         </Col>
       </Row>
+      <Footer/>
     </Container>
   );
 };

@@ -5,15 +5,15 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 
 const AppNavbar = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="dark" variant="dark"  expand="lg md">
       <Container>
-        <Navbar.Brand as={Link} to="/"> <img src="guruji.png" alt="Guruji"  style={{height:'2rem'}}/></Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" > <img src="guruji.png" alt="Guruji"  style={{height:'2rem'}}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/features">Features</Nav.Link>
-            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

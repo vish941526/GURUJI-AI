@@ -4,7 +4,8 @@ import ChatComponent from './chatComponent/ChatComponent'
 import AppNavbar from './Navbar/AppNavbar'
 import FeaturesComponent from './featuresComponent/FeaturesComponent'
 import ContactUsComponent from './contactUs/ContactUsComponent';
-import Footer from './footer/Footer'
+import GenerativeAIComponent from './imageAi/GenerativeAIComponent'
+import HomeSection from './homeSection/HomeSection'
 
 function App() {
   return (
@@ -12,11 +13,12 @@ function App() {
     <BrowserRouter>
     <AppNavbar/>
     <Routes>
-      <Route path='/' element={<ChatComponent/>}/>
+      <Route path='/' element={<HomeSection/>}/>
       <Route path='/features' element={<FeaturesComponent/>}/>
       <Route path='/contact' element={<ContactUsComponent/>}/>
+      <Route path='/imageAi' element={<GenerativeAIComponent/>}/>
+      <Route path='/textAi' element={<ChatComponent/>}/>
     </Routes>
-    <Footer/>
     </BrowserRouter>
   
   )
