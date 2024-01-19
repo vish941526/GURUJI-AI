@@ -30,6 +30,12 @@ const FeaturesComponent = () => {
                 Guru Ji can assist you with a variety of topics, including general knowledge, advice, and more.
               </p>
             </li>
+            <li className="list-group-item">
+              <h5>Print Support</h5>
+              <p>
+                Guru Ji can assist you with a Print features which help us the user to Print the answer into pdf
+              </p>
+            </li>
           </ul>
         </Col>
       </Row>
